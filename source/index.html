@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step-1</title>
+     <!-- fontawesome kit -->
+     <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+    <!-- intel fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- output tailwind css -->
+    <link rel="stylesheet" href="../distribution/output.css">
+</head>
+<body class="p-[20px] ">
+<div class="columns-1 md:columns-2 gap-[10px] align-middle md:flex block">
+    <div>
+        <div class="hidden md:block">
+            <img src="../asset/image/logo-medium.png" alt="ultimate">
+        </div>
+        <div class="block md:hidden">
+            <img src="../asset/image/logo-small.png" alt="ultimate">
+        </div>
+        <div class="mb-[20px]">
+            <img src="../asset/image/istockphoto-1321277096-612x612 1.png" alt="team">
+        </div>
+    </div>
+    <div class="w-12/12 mobile:w-10/12 md:w-8/12 lg:w-5/12 mx-auto md:ml-auto pt-[30px] md:pt-0 min-h-[480px] md:h-[calc(100vh-40px)] flex align-middle justify-center flex-col shadow-xl">
+        <div class="secondary-heading capitalize flex justify-center py-[50px]"> SignUp form</div> 
+        <form class="mt-[40px] space-y-[40px] relative " name="formValidation" id="formValidation" onsubmit="return false">           
+            <div class="relative mx-auto flex justify-center w-full px-[20px] mobile:w-[320px] mobile:px-0 sm:w-[320px] md:w-[280px] lg:w-[320px]">
+                <input class=" w-full" type="text" id="NameFirst" name="nameFirst" required placeholder="write your first name">
+            </div>               
+            <div class="relative flex justify-center w-full px-[20px] mobile:w-[320px] mobile:px-0 sm:w-[320px] md:w-[280px] lg:w-[320px] mx-auto">
+                <input class="w-full " type="text" id="NameLast" name="nameLast" required placeholder="write your last name">
+            </div>               
+                           
+            <div class="flex justify-center pt-[30px]">
+                <button class="primary-button capitalize shadow-[0px_4px_4px_rgba(0,0,0,0.25)]" id="BtnGoStep-2" type="submit" onclick="gotostep_2()"> Next step <span class="text-white"><i class="fa-solid fa-arrow-right"></i></span> </button>
+            </div>
+            <div class="flex justify-center pt-[40px] pb-[30px] md:pb-0 text-sm font-medium text-gray">
+                Already have an account? <a class="uppercase text-md pl-[10px] text-blue underline font-semibold" href="pages/login.html">login here</a>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+<!-- jquery js -->
+<script src="../asset/jquery-js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+<!-- form validation js -->
+<script src="./js/formValidate.js"></script>
+<script src="./js/gotosetp2.js"></script>
+</body>
+</html>

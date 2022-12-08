@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-heading{
+    @apply text-xl font-semibold text-black
+}
+.secondary-heading{
+    @apply text-lg font-semibold text-[#000]
+}
+.primary-paragraph{
+    @apply text-base font-normal text-black
+}
+.secondary-paragraph{
+    @apply text-sm font-normal text-black
+}
+
+.primary-button{
+    @apply text-base font-medium text-white bg-blue py-[15px] px-[20px] border-none outline-0 rounded-[15px]  hover:bg-light-blue duration-300 ease-in-out
+}
+label.error{
+    @apply text-gray text-sm absolute bottom-[-20px] left-[10px] font-medium
+
+}
+input{
+    @apply border-b-gray border-b-[1px]
+}
+input::placeholder{
+    @apply pl-[10px] capitalize
+}
+input:focus-visible{
+    @apply outline-0 border-b-gray
+}
